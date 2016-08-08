@@ -18,7 +18,7 @@ angular.module('Authentication')
                         callback(response);
                     }).
                     error(function(data, status, headers, config) {
-                        this.ClearCredentials();
+                        service.ClearCredentials();
                         var response = { success: false, message : status};
                         callback(response);
                     });
